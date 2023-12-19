@@ -1,7 +1,8 @@
 (library
  (modes melange)
  (name bsCssEmotion)
- (libraries bsCss)
  (public_name bs-css.emotion)
+ (melange.compile_flags -open BsCss)
+ (libraries bs-css)
  (preprocess
   (pps melange.ppx)))

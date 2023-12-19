@@ -2,5 +2,7 @@
  (modes melange)
  (name bsCss)
  (public_name bs-css)
+ (flags
+  (:standard -w +A-32-34-44))
  (preprocess
   (pps melange.ppx)))
