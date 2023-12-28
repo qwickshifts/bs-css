@@ -1,0 +1,6 @@
+(library
+ (modes melange)
+ (name bsCss)
+ (public_name bs-css)
+ (preprocess
+  (pps melange.ppx)))
