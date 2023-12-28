@@ -13,14 +13,14 @@ help: ## Print this help message
 
 .PHONY: nuke
 nuke: ## Delete all files that will be generated
-	rm $(project_name).opam
+	rm -f $(project_name).opam
 	rm -rf node_modules
-	opam switch remove . -y
+	rm -rf _opam
+	rm -rf _build
 
 .PHONY: create-switch
 create-switch: ## Create opam switch
-	opam switch create . -y --empty
-	opam install dune -y
+	opam switch create . -y --deps-only --no-install --packages=ocaml.5.1.0,dune
 
 .PHONY: init
 init: create-switch install ## Configure everything to develop this repository in local
