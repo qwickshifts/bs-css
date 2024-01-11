@@ -35,3 +35,6 @@ build: [
   ]
 ]
 dev-repo: "git+https://github.com/riKiMasan/bs-css.git"
+depexts: [
+  ["emotion"] {npm-version = "^10.0.7"}
+]
