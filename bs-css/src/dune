@@ -2,6 +2,7 @@
  (modes melange)
  (name bsCss)
  (public_name bs-css)
+ (libraries melange.belt)
  (flags
   (:standard -w +A-32-34-44))
  (preprocess

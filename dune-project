@@ -24,7 +24,9 @@
  (depends
   dot-merlin-reader
   (melange
-   (>= 2.0.0))
+   (and
+    (>= 3.0.0)
+    (< 4.0.0)))
   (ocaml
    (>= 5.1.0))
   (reason
@@ -33,6 +35,7 @@
   ocamlformat ; with-dev-setup
   opam-check-npm-deps ; with-dev-setup
   melange-jest
-  reason-react))
+  (reason-react
+   (= 0.14.0))))
 
 (generate_opam_files)

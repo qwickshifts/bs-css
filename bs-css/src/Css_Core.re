@@ -1867,7 +1867,7 @@ let backgroundSize = x =>
 let fontFace =
     (~fontFamily, ~src, ~fontStyle=?, ~fontWeight=?, ~fontDisplay=?, ()) => {
   let fontStyle =
-    Js.Option.map((. value) => FontStyle.toString(value), fontStyle);
+    Stdlib.Option.map(value => FontStyle.toString(value), fontStyle);
   let src =
     src
     |> List.map(
